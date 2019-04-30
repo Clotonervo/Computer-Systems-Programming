@@ -1,0 +1,89 @@
+Team Name:implicit first fit
+Member 1 :Sam Hopkins:h0pkins3
+Member 2 :Annie Larkin:avl7949
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+
+ Case 4 >>>>>>>>>>>>>> 
+current bp = 0xf69be848 
+NEXT_BLKP(bp) = 0xf69bf838 
+current root = 0xf69bd020 
+root pointer @ 0xf69bf838 
+root = PREV_BLKP(bp) root = 0xf69bd020   NEXT_BLKP(bp) = 0xf69bd020 
+Perf index = 40 (util) + 18 (thru) = 57/100
+Total: 10/35 (threshold-ed at 46, normalized to 85, and scaled to 35.0 points)

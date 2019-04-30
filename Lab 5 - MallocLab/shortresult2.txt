@@ -1,0 +1,1337 @@
+Team Name:implicit first fit
+Member 1 :Sam Hopkins:h0pkins3
+Member 2 :Annie Larkin:avl7949
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5ed8 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5ed8 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691b01c 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+_________________In Malloc ________________
+size = 2040 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a020 
+end = 0xf691b01c 
+new bp = 0xf691a020 
+found free bp = 0xf691a020 
+0xf691a020//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4010 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691a820 
+end = 0xf691b01c 
+new bp = 0xf691a820 
+bp next address = 20new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691b01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691c01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a820 
+0xf691a820//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 48 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b7d8 
+end = 0xf691c01c 
+new bp = 0xf691b7d8 
+found free bp = 0xf691b7d8 
+0xf691b7d8//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691b810 
+end = 0xf691c01c 
+new bp = 0xf691b810 
+bp next address = 10new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691c01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691d01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691b810 
+0xf691b810//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691c800 
+end = 0xf691d01c 
+new bp = 0xf691c800 
+bp next address = 0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691d01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691e01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691c800 
+0xf691c800//////In Place ////// 
+if loop 
+_________________In Malloc ________________
+size = 4072 
+-----------------------------In Find Fit ---------------------------------------
+root = 0xf691d7f0 
+end = 0xf691e01c 
+new bp = 0xf691d7f0 
+bp next address = fffffff0new bp = 0xffea5e18 
+bp pointer reached past end: end: 0xf691e01c bp: 0xffea5e18 
+>>>>>>>>>>>> In Extend-Heap >>>>>>>>>> 
+end = f691f01c 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691d7f0 
+0xf691d7f0//////In Place ////// 
+if loop 
+<<<<<< In Free >>>>>>>> 
+size freed = 2048 
+*****************************In Coalesce ****************************
+Case 1 >>>>>>>>>>> 
+<<<<<< In Free >>>>>>>> 
+size freed = 4024 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 56 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 3 >>>>> 
+root = 0xf691a020 
+<<<<<< In Free >>>>>>>> 
+size freed = 4080 
+*****************************In Coalesce ****************************
+Case 4 >>>>> 
+root = 0xf691a020 
+Perf index = 54 (util) + 2 (thru) = 55/100
+Total: 8/35 (threshold-ed at 46, normalized to 85, and scaled to 35.0 points)
