@@ -1,0 +1,233 @@
+#######################################################################
+# Test for copying block of size 4;
+#######################################################################
+	.pos 0
+main:	irmovq Stack, %rsp  	# Set up stack pointer
+
+	# Set up arguments for copy function and then invoke it
+	irmovq $4, %rdx		# src and dst have 4 elements
+	irmovq dest, %rsi	# dst array
+	irmovq src, %rdi	# src array
+	call ncopy		 
+	halt			# should halt with num nonzeros in %rax
+StartFun:
+/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len words to dst.
+# Return the number of positive words (>0) contained in src.
+#
+# Include your name and ID here.
+#
+# Describe how and why you modified the baseline code.
+# 
+# We added the iaddq instruction to the PIPE architecture so we would not have to assign as many constant # to registers in order to perform 
+# addition. Because our iaddq instruction sets the condition code, we could also replace subq commands. 
+#
+# We unrolled our loop so that a big loop ran processed eight values at a time, a medium loop processed 
+# four values at a time, a small loop
+# processed two values and a final set of statements processed the last values. In the final set of 
+# statements we didn’t update rdi and rsi.
+#
+# After unrolling the loop we rearranged the instructions so that we minimized bubbles in the pipeline. 
+# For each value a call was needed to       
+# perform a memory to register move and a register to memory move. We added lines in between the two 
+# instructions so bubbles would not    
+# need to be injected while the second instruction waited for its dependencies to be updated.
+################################################################
+# Do not modify this portion
+# Function prologue.
+# %rdi = src, %rsi = dst, %rdx = len
+ncopy:
+
+##################################################################
+# You can modify this portion
+
+irmovq $0,%rax      # count = 0
+iaddq $-8,%rdx	    # len >= 8?
+Start:
+    jge Bigloop		# if so, goto Bigloop:
+    iaddq $4,%rdx	# len >= 4?
+Start_two:
+    jge Big_loop_part_two    # if so, goto Big_loop_part_two:
+    iaddq $2,%rdx    # len >= 2?  
+Start_three:
+    jge Big_loop_part_three   # if so, goto Big_loop_part_three:
+    iaddq $2,%rdx  #len >- 2?
+End:
+    andq %rdx,%rdx  # len == 0?
+    jle Done  # if so, jump to end
+
+Loop:	
+    mrmovq (%rdi), %r10	# read val from src...
+    rmmovq %r10, (%rsi)	# ...and store it to dst
+    andq %r10, %r10		# val <= 0?
+    jle Done		# if so, goto End:
+    iaddq $1, %rax		# count++
+    jmp Done
+
+#-------------------- BIG Loop --------------------------------
+Bigloop:
+    mrmovq (%rdi), %r10 # read val from src...
+    mrmovq 8(%rdi), %r8 # read next val from src...
+    rmmovq %r10, (%rsi) # ...and store it to dst
+    andq %r10,%r10  # val <= 0?
+    mrmovq 16(%rdi), %r12 # read next val from src...
+    jle Npos_one # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_one:
+    mrmovq 16(%rdi), %r12 # read next val from src...
+    rmmovq %r8, 8(%rsi) # ...and store it to dst
+    andq %r8,%r8 # val <= 0? 
+    jle Npos_two # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_two:
+    mrmovq 24(%rdi), %r13 # read next val from src...
+    rmmovq %r12, 16(%rsi) # ...and store it to dst
+    andq %r12,%r12 # val <= 0?
+    jle Npos_three # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_three:
+    mrmovq 32(%rdi), %r14 # read next val from src...
+    rmmovq %r13, 24(%rsi) # ...and store it to dst
+    andq %r13,%r13 # val <= 0?
+    jle Npos_four # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_four:
+    mrmovq 40(%rdi), %r10 # read next val from src...
+    rmmovq %r14, 32(%rsi) # ...and store it to dst
+    andq %r14,%r14  # val <= 0?
+    jle Npos_five # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_five:
+    mrmovq 48(%rdi), %r12 # read next val from src...
+    rmmovq %r10, 40(%rsi) # ...and store it to dst
+    andq %r10,%r10 # val <= 0?
+    jle Npos_six # if so, skip next line
+    iaddq $1,%rax # count++
+Npos_six:
+    mrmovq 56(%rdi),%r14 # read next val from src...
+    rmmovq %r12, 48(%rsi) # ...and store it to dst
+    andq %r12,%r12 # val <= 0?
+    jle Npos_seven # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_seven:
+    rmmovq %r14, 56(%rsi) # ...and store it to dst
+    iaddq $64,%rdi # update rdi
+    andq %r14,%r14 # val <= 0?
+    jle Npos_last # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_last:
+    iaddq $64,%rsi #update rsi
+    iaddq $-8,%rdx #update rdx
+    jmp Start 
+
+#----------------------- 4 big loop ---------------------------
+Big_loop_part_two:
+    mrmovq (%rdi), %r10 # read val from src...
+    mrmovq 8(%rdi), %r8 # read next val from src...
+    rmmovq %r10, (%rsi) # ...and store it to dst
+    andq %r10,%r10 # val <= 0?
+    jle Npos_one_part_two # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_one_part_two:
+    mrmovq 16(%rdi), %r12 # read next val from src...
+    rmmovq %r8, 8(%rsi) # ...and store it to dst
+    andq %r8,%r8 # val <= 0?
+    jle Npos_two_part_two # if so, skip next line
+    iaddq $1,%rax # count++
+
+Npos_two_part_two:
+    iaddq $24,%rdi #update rdi
+    rmmovq %r12,16(%rsi) # ...and store it to dst
+    andq %r12,%r12 # val <= 0?
+    jle Npos_last_part_two # if so, skip next line
+    iaddq $1,%rax # count++ 
+
+Npos_last_part_two:
+    iaddq $24,%rsi # update rsi
+    iaddq $-3,%rdx # update rdx
+    jmp Start_two
+
+#---------------------- 2 loop ---------------------------------
+Big_loop_part_three:
+    mrmovq (%rdi), %r10 # read val from src...
+    mrmovq 8(%rdi), %r8 # read next val from src...
+    rmmovq %r10, (%rsi) # ...and store it to dst
+    andq %r10,%r10 # val <= 0?
+    jle Npos_last_part_three # if so, skip next line
+    iaddq $1,%rax # count++ 
+
+Npos_last_part_three:
+    rmmovq %r8, 8(%rsi) # ...and store it to dst
+    iaddq $16,%rsi # update rsi
+    iaddq $16,%rdi # update rdi
+    andq %r8,%r8 # val <= 0?
+    jle Npos_part_three_final # if so, skip next line
+    iaddq $1,%rax # count++ 
+
+Npos_part_three_final:
+    iaddq $-2,%rdx # update rdx
+    jmp Start_three
+
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	ret
+##################################################################
+# Keep the following label at the end of your function
+End:
+#/* $end ncopy-ys */
+
+EndFun:
+
+###############################
+# Source and destination blocks 
+###############################
+	.align 8
+src:
+	.quad -1
+	.quad 2
+	.quad 3
+	.quad -4
+	.quad 0xbcdefa # This shouldn't get moved
+
+	.align 16
+Predest:
+	.quad 0xbcdefa
+dest:
+	.quad 0xcdefab
+	.quad 0xcdefab
+	.quad 0xcdefab
+	.quad 0xcdefab
+Postdest:
+	.quad 0xdefabc
+
+.align 8
+# Run time stack
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+	.quad 0
+
+Stack:

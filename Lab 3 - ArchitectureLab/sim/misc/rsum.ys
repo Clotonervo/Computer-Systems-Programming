@@ -1,0 +1,52 @@
+# Samuel Hopkins h0pkins3
+# Execution begins at address 0 
+    .pos 0
+    irmovq stack, %rsp      # Set up stack pointer
+    rrmovq %rsp, %rbp
+    call main       # Execute main program
+    halt            # Terminate program 
+
+# List of 3 elements
+    .align 8
+list:  
+ele1:
+    .quad 0x00a
+    .quad ele2
+ele2:
+    .quad 0x0b0
+    .quad ele3
+ele3:
+    .quad 0xc00
+    .quad 0
+
+main:   
+    irmovq list,%rdi
+    call rsum_list     # sum_list
+    ret
+
+# rsum_list(list_ptr ls)
+# start in %rdi
+rsum_list:    
+    andq %rdi,%rdi       # Set CC
+    jmp     test         # Goto test
+loop:   
+    irmovq $0,%rax
+    mrmovq (%rdi),%r10   # Get value in pointer
+    addq %r10,%rax       # Add to val
+    mrmovq 8(%rdi),%rdi  # move next pointer to rdi
+    rrmovq %rax, %rbx
+    pushq %rbx
+    call rsum_list
+    popq %rbx
+    addq %rbx, %rax
+    ret
+test:   
+    jne    loop          # Stop when 0
+    xorq %rax,%rax       # val = 0;
+    ret                  # Return
+
+# Stack starts here and grows to lower addresses
+    .pos 0x200
+stack:
+
+    

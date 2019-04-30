@@ -1,0 +1,52 @@
+# Samuel Hopkins h0pkins3
+# Execution begins at address 0 
+    .pos 0
+    irmovq stack, %rsp      # Set up stack pointer
+    rrmovq %rsp, %rbp
+    call main       # Execute main program
+    halt            # Terminate program 
+
+# List of 3 elements
+.align 8
+# Source block
+src:
+        .quad 0x00a
+        .quad 0x0b0
+        .quad 0xc00
+# Destination block
+dest:
+        .quad 0x111
+        .quad 0x222
+        .quad 0x333
+
+main:   
+    irmovq src,%rdi
+    irmovq dest,%rsi
+    irmovq $3,%rdx
+    call copy_block     
+    ret
+
+# copy_block(long *src, long *dest, long len)
+# src rdi, dest rsi, len rdx
+copy_block:    
+    andq %rdx,%rdx       # Set CC
+    irmovq $1,%r9
+    irmovq $8,%r8
+    irmovq $0,%rax       # set result = 0
+    jmp     test         # Goto test
+loop:   
+    mrmovq (%rdi),%r10    # val = *src
+    addq %r8,%rdi       # src++
+    rmmovq %r10,(%rsi)    # *dest = val
+    addq %r8,%rsi        # dest++
+    xorq %r10,%rax      # result ^= val
+    subq %r9,%rdx        # len--
+test:   
+    jne    loop          # Stop when 0
+    ret                  # Return
+
+# Stack starts here and grows to lower addresses
+    .pos 0x400
+stack:
+
+    

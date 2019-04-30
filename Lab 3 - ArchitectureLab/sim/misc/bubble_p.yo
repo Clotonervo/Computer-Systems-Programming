@@ -1,0 +1,61 @@
+                            | # Execution begins at address 0 
+0x000:                      |     .pos 0
+0x000: 30f40002000000000000 |     irmovq stack, %rsp      # Set up stack pointer
+0x00a: 2045                 |     rrmovq %rsp, %rbp
+0x00c: 803e00000000000000   |     call main       # Execute main program
+0x015: 00                   |     halt            # Terminate program 
+                            | 
+0x016:                      | data:
+0x016: 0500000000000000     |   .quad 0x0000000000000005
+0x01e: 0400000000000000     |   .quad 0x0000000000000004
+0x026: 0300000000000000     |   .quad 0x0000000000000003
+0x02e: 0200000000000000     |   .quad 0x0000000000000002
+0x036:                      | data_end:
+0x036: 0100000000000000     |   .quad 0x0000000000000001
+                            |   
+0x03e:                      | main:   
+0x03e: 30f71600000000000000 |     irmovq data,%rdi
+0x048: 30f63600000000000000 |     irmovq data_end, %rsi
+0x052: 30f80800000000000000 |     irmovq $8, %r8
+0x05c: 30fb2800000000000000 |     irmovq $40, %r11
+0x066: 807000000000000000   |     call bubble_a     
+0x06f: 90                   |     ret
+                            | 
+                            | # long sum(long *start, long count)
+                            | # start in %rdi, count in %rsi
+0x070:                      | bubble_a:
+0x070: 30f80800000000000000 |         irmovq $8, %r8
+0x07a:                      | .LFB0:
+0x07a: 70d200000000000000   |         jmp     .L2
+0x083:                      | .L3:
+0x083: 6080                 |         addq    %r8, %rax
+0x085:                      | .L5:
+0x085: 206d                 |         rrmovq  %rsi, %r13
+0x087: 610d                 |         subq   %rax, %r13
+                            | #        cmpq    %rsi, %rax
+0x089: 71d000000000000000   |         jle     .L7
+0x092: 50900800000000000000 |         mrmovq    8(%rax), %r9
+0x09c: 50a00000000000000000 |         mrmovq    (%rax), %r10
+0x0a6: 209d                 |         rrmovq  %r9, %r13
+0x0a8: 61ad                 |         subq    %r10, %r13
+                            | #        cmpq    %rcx, %rdx
+0x0aa: 758300000000000000   |         jge     .L3
+0x0b3: 40a00800000000000000 |         rmmovq    %r10, 8(%rax)
+0x0bd: 40900000000000000000 |         rmmovq    %r9, (%rax)
+0x0c7: 708300000000000000   |         jmp     .L3
+0x0d0:                      | .L7:
+0x0d0: 6186                 |         subq    %r8, %rsi
+0x0d2:                      | .L2:
+0x0d2: 206a                 |         rrmovq  %rsi, %r10
+0x0d4: 617a                 |         subq    %rdi, %r10
+0x0d6: 71ea00000000000000   |         jle      .L8
+0x0df: 2070                 |         rrmovq   %rdi, %rax
+0x0e1: 708500000000000000   |         jmp     .L5
+0x0ea:                      | .L8:
+0x0ea: 90                   |         ret
+                            |     
+                            | 
+                            | # Stack starts here and grows to lower addresses
+0x200:                      |     .pos 0x200
+0x200:                      | stack:
+                            | 
