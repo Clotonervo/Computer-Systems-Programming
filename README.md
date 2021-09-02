@@ -1,7 +1,7 @@
-# CS-224---Computer-Systems
-All assignments from CS 224 - Computer Systems class. 
+# Computer-Systems
+Learning the basics of Computer Systems, from cybersecurity to basic malloc functions. Done in conjunction to the Carnegie Mellon Computer Systems course.
 
-## Course Outcomes ##
+## Outcomes ##
 #### Binary Computations ####
 Ability to perform simple computations in binary.
 
